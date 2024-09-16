@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "spell-engine-openpac-compat",
+	"version": "${version}",
+	"name": "Spell Engine x Open Parties and Claims",
+	"description": "Adds support between Spell Engine and Open Parties and Claims.",
+	"authors": [
+		"ElocinDev"
+	],
+	"contact": {
+		"sources": "https://github.com/nvb-uy/SpellEngine-Opac-Compat"
+	},
+	"license": "ARR",
+	"icon": "assets/spell-engine-openpac-compat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"elocindev.spopaccompat.SpellEngineOpenPacCompat"
+		]
+	},
+	"mixins": [
+		"spell-engine-openpac-compat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"spell_engine": "*",
+		"openpartiesandclaims": "*"
+	}
+}
